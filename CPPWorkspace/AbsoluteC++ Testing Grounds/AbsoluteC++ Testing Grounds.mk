@@ -3,13 +3,13 @@
 ## any manual changes will be erased      
 ##
 ## Debug
-ProjectName            :=FirstProgram
+ProjectName            :=AbsoluteC++ Testing Grounds
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
 WorkspacePath          :=C:/Users/Troy/development/udemy/udemycpp/CPPWorkspace
-ProjectPath            :=C:/Users/Troy/development/udemy/udemycpp/CPPWorkspace/FirstProgram
-IntermediateDirectory  :=../build-$(ConfigurationName)/FirstProgram
-OutDir                 :=../build-$(ConfigurationName)/FirstProgram
+ProjectPath            :="C:/Users/Troy/development/udemy/udemycpp/CPPWorkspace/AbsoluteC++ Testing Grounds"
+IntermediateDirectory  :=../build-$(ConfigurationName)/AbsoluteC++\ Testing\ Grounds
+OutDir                 :=../build-$(ConfigurationName)/AbsoluteC++\ Testing\ Grounds
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
@@ -62,7 +62,7 @@ AS       := as
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=../build-$(ConfigurationName)/FirstProgram/main.cpp$(ObjectSuffix) 
+Objects0=../build-$(ConfigurationName)/AbsoluteC++\ Testing\ Grounds/main.cpp$(ObjectSuffix) 
 
 
 
@@ -74,18 +74,18 @@ Objects=$(Objects0)
 .PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: MakeIntermediateDirs $(OutputFile)
 
-$(OutputFile): ../build-$(ConfigurationName)/FirstProgram/.d $(Objects) 
-	@if not exist "..\build-$(ConfigurationName)\FirstProgram" mkdir "..\build-$(ConfigurationName)\FirstProgram"
+$(OutputFile): ../build-$(ConfigurationName)/AbsoluteC++\ Testing\ Grounds/.d $(Objects) 
+	@if not exist "..\build-$(ConfigurationName)\AbsoluteC++\ Testing\ Grounds" mkdir "..\build-$(ConfigurationName)\AbsoluteC++\ Testing\ Grounds"
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@if not exist "..\build-$(ConfigurationName)\FirstProgram" mkdir "..\build-$(ConfigurationName)\FirstProgram"
+	@if not exist "..\build-$(ConfigurationName)\AbsoluteC++\ Testing\ Grounds" mkdir "..\build-$(ConfigurationName)\AbsoluteC++\ Testing\ Grounds"
 	@if not exist ""..\build-$(ConfigurationName)\bin"" mkdir ""..\build-$(ConfigurationName)\bin""
 
-../build-$(ConfigurationName)/FirstProgram/.d:
-	@if not exist "..\build-$(ConfigurationName)\FirstProgram" mkdir "..\build-$(ConfigurationName)\FirstProgram"
+../build-$(ConfigurationName)/AbsoluteC++\ Testing\ Grounds/.d:
+	@if not exist "..\build-$(ConfigurationName)\AbsoluteC++\ Testing\ Grounds" mkdir "..\build-$(ConfigurationName)\AbsoluteC++\ Testing\ Grounds"
 
 PreBuild:
 
@@ -93,16 +93,16 @@ PreBuild:
 ##
 ## Objects
 ##
-../build-$(ConfigurationName)/FirstProgram/main.cpp$(ObjectSuffix): main.cpp ../build-$(ConfigurationName)/FirstProgram/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Troy/development/udemy/udemycpp/CPPWorkspace/FirstProgram/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-../build-$(ConfigurationName)/FirstProgram/main.cpp$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/FirstProgram/main.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/FirstProgram/main.cpp$(DependSuffix) -MM main.cpp
+../build-$(ConfigurationName)/AbsoluteC++\ Testing\ Grounds/main.cpp$(ObjectSuffix): main.cpp ../build-$(ConfigurationName)/AbsoluteC++\ Testing\ Grounds/main.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Troy/development/udemy/udemycpp/CPPWorkspace/AbsoluteC++ Testing Grounds/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+../build-$(ConfigurationName)/AbsoluteC++\ Testing\ Grounds/main.cpp$(DependSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/AbsoluteC++\ Testing\ Grounds/main.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/AbsoluteC++\ Testing\ Grounds/main.cpp$(DependSuffix) -MM main.cpp
 
-../build-$(ConfigurationName)/FirstProgram/main.cpp$(PreprocessSuffix): main.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/FirstProgram/main.cpp$(PreprocessSuffix) main.cpp
+../build-$(ConfigurationName)/AbsoluteC++\ Testing\ Grounds/main.cpp$(PreprocessSuffix): main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/AbsoluteC++\ Testing\ Grounds/main.cpp$(PreprocessSuffix) main.cpp
 
 
--include ../build-$(ConfigurationName)/FirstProgram//*$(DependSuffix)
+-include ../build-$(ConfigurationName)/AbsoluteC++\ Testing\ Grounds//*$(DependSuffix)
 ##
 ## Clean
 ##
