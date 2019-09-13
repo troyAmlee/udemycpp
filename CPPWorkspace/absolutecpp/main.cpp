@@ -9,32 +9,16 @@ double box();
 double money();
 double feetConversion();
 double liquid();
+double average();
 
 int main(int argc, char **argv)
-{
-//	double one;
-//	double two;
-//	double three;
-//	string ding = "please enter three numbers: ";
-//	cout << ding;
-//	cin >> one >> two >> three;
-//	cout << one << endl << two << endl << three << endl;
-//	
-//	int feet(0); // int feet = 0;
-//	int inches(0); //int inches = 0;
-//	// int feet = 0, inches = 0;
-//	// int feet(0), inches(0);
-//	
-//	int count = 0;
-//	double distance = 1.5;
-//	
-//	cout << count << endl <<  distance << endl;
-	
+{	
 	jogger();
 	box();
 	money();
 	feetConversion();
 	liquid();
+	average();
 	
 	return 0;
 }
@@ -135,4 +119,17 @@ double liquid(){
 	cout << ounces << " oz. = " << maxQuarts << " qt. " 
 		 << leftoverOz << " oz." << endl;
 	return 0;
+}
+
+double average(){
+	cout << "Enter the price (x y z): " << endl;
+	double x;
+	double y;
+	double z;
+	cin >> x >> y >> z;
+	double sum;
+	sum = x + y + z;
+	double average_;
+	average_ = sum/3.0;
+	cout << "The average variable = " << average_ << endl;
 }
